@@ -1,13 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package datastructures;
 
-/**
- *
- * @author user
- */
+// @author iamsimranjot
+//Generic Implementation of Queue's using Linked List
+
 public class LGqueue<Item> {
     
     private class node{

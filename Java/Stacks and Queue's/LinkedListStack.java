@@ -1,18 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package datastructures;
 
-/**
- *
- * @author user
- */
-public class LGstack<Item> {
+// @author iamsimranjot
+// Implementation of Stacks using Linked List
+
+public class Lstack {
     
     private class node{
         
-        Item item;
+        String item;
         node next;
     }
     
@@ -23,7 +18,7 @@ public class LGstack<Item> {
         return (first == null);
     }
     
-    void push(Item str){
+    void push(String str){
         
         node oldfirst = first;
         first = new node();
@@ -31,9 +26,9 @@ public class LGstack<Item> {
         first.next = oldfirst;
     }
     
-    Item pop(){
+    String pop(){
         
-        Item str = first.item;
+        String str = first.item;
         first = first.next;
         return str;
     }

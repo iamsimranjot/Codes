@@ -1,18 +1,14 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package datastructures;
 
-/**
- *
- * @author user
- */
-public class Lstack {
+
+// @author iamsimranjot
+// Generic Implementation of Queue's using Linked List
+
+public class LGstack<Item> {
     
     private class node{
         
-        String item;
+        Item item;
         node next;
     }
     
@@ -23,7 +19,7 @@ public class Lstack {
         return (first == null);
     }
     
-    void push(String str){
+    void push(Item str){
         
         node oldfirst = first;
         first = new node();
@@ -31,9 +27,9 @@ public class Lstack {
         first.next = oldfirst;
     }
     
-    String pop(){
+    Item pop(){
         
-        String str = first.item;
+        Item str = first.item;
         first = first.next;
         return str;
     }

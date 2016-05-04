@@ -1,13 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package datastructures;
 
-/**
- *
- * @author user
- */
+// @author iamsimranjot
+// Implementation of Queue's using Linked List
+
 public class Lqueue {
     
     private class node{

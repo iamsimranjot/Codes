@@ -1,13 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package datastructures;
 
-/**
- *
- * @author user
- */
+// @author iamsimranjot
+// Implementation of Stacks using Arrays
+
 public class Astack {
 
     private String arr[];
